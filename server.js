@@ -11,6 +11,10 @@ app.use(express.urlencoded({ extended: true }));
 
 //Rutas
 require("./app/routes/registros.routes.js")(app);
+require("./app/routes/ciudad.routes.js")(app);
+require("./app/routes/area.routes.js")(app);
+require("./app/routes/folio.routes.js")(app);
+require("./app/routes/cargo.routes.js")(app);
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {

@@ -9,12 +9,15 @@ module.exports = (mongoose) => {
                 apellidoMa: String,
                 edad: Number,
                 genero: String,
-                IdArea: String,
+                idArea: Number,
                 correoElectronico: String,
                 telefono: String,
-                idCiudad: String,
-                idCargo: String,
-                fecha: Date
+                idCiudad: Number,
+                idCargo: Number,
+                fecha:{
+                    type: Date,
+                    default: Date.now()
+                }
             }
         )
     );
