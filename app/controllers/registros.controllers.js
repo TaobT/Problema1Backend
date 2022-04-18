@@ -89,7 +89,7 @@ exports.create = (req, res) => {
 // Obtener todos los registros ordenados por apellido paterno
 exports.findAll = (req, res) => {
     Registro.find()
-        .sort({ apellidoPa: 1 })
+        .sort({ apellidoPa: -1 })
         .then(registros => {
             res.send(registros);
         }
